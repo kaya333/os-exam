@@ -1,0 +1,6 @@
+echo "Enter the salary"
+read bp
+da=`echo $bp \* 0.4 | bc`
+hra=`echo $bp \* 0.2 | bc`
+gs=`echo $bp + $da + $hra | bc`
+echo "Gross salary =" $gs

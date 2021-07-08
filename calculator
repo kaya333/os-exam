@@ -1,0 +1,22 @@
+ch="y"
+while [ $ch = "y" ]
+do
+echo "Enter the number"
+read a b
+echo "enter the operator"
+read op
+case $op in
++)c=`expr $a + $b`
+echo "sum is" $c;;
+-)c=`expr $a - $b`
+echo "differenc is" $c;;
+\*)c=`expr $a \* $b`
+echo "product is" $c;;
+/)c=`expr $a / $b`
+echo "Quotient" $c;;
+%)c=`expr $a % $b`
+echo "Reminder" $c;;
+esac 
+echo "do you wnat to continue (y/n)"
+read ch
+done

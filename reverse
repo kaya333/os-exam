@@ -1,0 +1,9 @@
+echo "enter the number"
+read n
+while [ $n -ne 0 ]
+do
+r=`expr $n % 10`
+rev=$rev$r
+n=`expr $n / 10`
+done
+echo "reverse of digit" $rev

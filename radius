@@ -1,0 +1,4 @@
+echo "enter the radius"
+read r
+a=`echo 3.14 \* $r \* $r | bc`
+echo "area of circle is" $a

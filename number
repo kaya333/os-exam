@@ -1,0 +1,8 @@
+echo "Enter the file name"
+read f
+l=`cat $f | wc -l`
+echo "Number of lines = " $l
+l=`cat $f | wc -w`
+echo "Number of words = " $l
+l=`cat $f | wc -c`
+echo "Number of characters = " $l

@@ -1,0 +1,17 @@
+echo "Enter the number"
+read n
+k=$n
+s=0
+while [ $n -ne 0 ]
+do
+r=`expr $n % 10`
+c=`expr $r \* $r \* $r`
+s=`expr $s + $c`
+n=`expr $n / 10`
+done
+if [ $k -eq $s ]
+then
+echo "The number is ARMSTRONG "
+else
+echo "The number is NOT ARMSTRONG "
+fi
